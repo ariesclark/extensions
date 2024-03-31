@@ -1,5 +1,13 @@
 # @ariesclark/array
 
+## 0.2.2
+
+### Patch Changes
+
+- fdc3ae6: Add more documentation & relevant files.
+- Updated dependencies [fdc3ae6]
+  - @ariesclark/number@0.2.1
+
 ## 0.2.1
 
 ### Patch Changes
