@@ -1,5 +1,11 @@
 # @ariesclark/object
 
+## 0.2.1
+
+### Patch Changes
+
+- fdc3ae6: Add more documentation & relevant files.
+
 ## 0.2.0
 
 ### Minor Changes

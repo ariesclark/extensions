@@ -1,5 +1,16 @@
 # @ariesclark/extensions
 
+## 0.2.2
+
+### Patch Changes
+
+- fdc3ae6: Add more documentation & relevant files.
+- Updated dependencies [fdc3ae6]
+  - @ariesclark/array@0.2.2
+  - @ariesclark/number@0.2.1
+  - @ariesclark/object@0.2.1
+  - @ariesclark/string@0.2.2
+
 ## 0.2.1
 
 ### Patch Changes
