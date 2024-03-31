@@ -1,5 +1,6 @@
 {
   "name": "extensions",
+  "private": true,
   "sideEffects": false,
   "version": "1.0.0",
   "description": "",

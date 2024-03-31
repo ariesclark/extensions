@@ -18,6 +18,18 @@ importers:
         specifier: ^5.4.3
         version: 5.4.3
 
+  packages/all:
+    dependencies:
+      '@ariesclark/array':
+        specifier: workspace:^
+        version: link:../array
+      '@ariesclark/number':
+        specifier: workspace:^
+        version: link:../number
+      '@ariesclark/string':
+        specifier: workspace:^
+        version: link:../string
+
   packages/array:
     dependencies:
       '@ariesclark/number':
