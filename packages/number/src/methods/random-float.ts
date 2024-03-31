@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import type { RandomFunction } from "../types";
 
 /**
@@ -5,7 +6,6 @@ import type { RandomFunction } from "../types";
  * @returns A random float between 0 and 1.
  */
 export const randomFloat: RandomFunction = () => {
-	const [value] = crypto.getRandomValues(new Uint8Array(1));
-	// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-	return value!;
+	const [a] = crypto.getRandomValues(new Uint32Array(1));
+	return a! / Math.pow(2, 32);
 };

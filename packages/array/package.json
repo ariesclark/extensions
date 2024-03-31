@@ -12,12 +12,16 @@
     "./*": "./dist/methods/*.js"
   },
   "scripts": {
-    "build": "rm -rf dist/* && tsc"
+    "build": "rm -rf dist/* && tsc",
+    "test": "bun test"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
     "@ariesclark/number": "workspace:^"
+  },
+  "devDependencies": {
+    "@ariesclark/object": "workspace:^"
   }
 }

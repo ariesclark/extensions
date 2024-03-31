@@ -19,6 +19,7 @@
   "dependencies": {
     "@ariesclark/array": "workspace:^",
     "@ariesclark/number": "workspace:^",
+    "@ariesclark/object": "workspace:^",
     "@ariesclark/string": "workspace:^"
   }
 }

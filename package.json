@@ -7,7 +7,9 @@
   "main": "index.js",
   "packageManager": "pnpm@8.15.5",
   "scripts": {
-    "build": "pnpm -r build",
+    "build": "pnpm clean && pnpm -r build",
+    "clean": "rm packages/*/dist -rf",
+    "test": "pnpm -r test",
     "release": "pnpm publish -r"
   },
   "keywords": [],
@@ -16,6 +18,7 @@
   "devDependencies": {
     "@ariesclark/eslint-config": "^1.7.2",
     "@changesets/cli": "^2.27.1",
+    "@types/bun": "^1.0.12",
     "typescript": "^5.4.3"
   }
 }
