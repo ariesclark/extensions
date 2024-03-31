@@ -2,3 +2,5 @@
 **/dist
 .pnpm-store
 .npmrc
+
+packages/all/README.md

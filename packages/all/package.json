@@ -3,10 +3,11 @@
   "private": false,
   "sideEffects": false,
   "version": "0.2.2",
-  "description": "",
+  "description": "Fast, efficient, and easy-to-use extensions for TypeScript.",
   "files": [
     "dist"
   ],
+  "types": "dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js"
   },
@@ -14,8 +15,20 @@
     "build": "rm -rf dist/* && cp -f ../../README.md ./README.md && tsc && ts-readme",
     "test": "bun test"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "array",
+    "function",
+    "number",
+    "object",
+    "string",
+    "typescript",
+    "utility"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ariesclark/extensions.git"
+  },
+  "author": "ariesclark",
   "license": "MIT",
   "dependencies": {
     "@ariesclark/array": "workspace:^",
