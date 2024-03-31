@@ -2,7 +2,7 @@
   "name": "@ariesclark/string",
   "private": false,
   "sideEffects": false,
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Fast, efficient, and easy-to-use string extensions for TypeScript.",
   "files": [
     "dist"

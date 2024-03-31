@@ -1,5 +1,11 @@
 # @ariesclark/number
 
+## 0.2.2
+
+### Patch Changes
+
+- 51e1f99: add package metadata & cross linking
+
 ## 0.2.1
 
 ### Patch Changes

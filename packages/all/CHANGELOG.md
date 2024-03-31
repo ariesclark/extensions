@@ -1,5 +1,16 @@
 # @ariesclark/extensions
 
+## 0.2.3
+
+### Patch Changes
+
+- 51e1f99: add package metadata & cross linking
+- Updated dependencies [51e1f99]
+  - @ariesclark/number@0.2.2
+  - @ariesclark/object@0.2.2
+  - @ariesclark/string@0.2.3
+  - @ariesclark/array@0.2.3
+
 ## 0.2.2
 
 ### Patch Changes
