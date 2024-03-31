@@ -1,5 +1,11 @@
 # @ariesclark/extensions
 
+## 0.2.4
+
+### Patch Changes
+
+- df79978: add root-package readme
+
 ## 0.2.3
 
 ### Patch Changes
