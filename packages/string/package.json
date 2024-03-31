@@ -1,0 +1,23 @@
+{
+  "name": "@ariesclark/string",
+  "private": false,
+  "sideEffects": false,
+  "version": "0.1.0",
+  "description": "",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/index.js",
+    "./*": "./dist/methods/*.js"
+  },
+  "scripts": {
+    "build": "rm -rf dist/* && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@ariesclark/array": "workspace:^"
+  }
+}
