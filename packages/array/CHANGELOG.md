@@ -1,5 +1,13 @@
 # @ariesclark/array
 
+## 0.2.3
+
+### Patch Changes
+
+- 51e1f99: add package metadata & cross linking
+- Updated dependencies [51e1f99]
+  - @ariesclark/number@0.2.2
+
 ## 0.2.2
 
 ### Patch Changes

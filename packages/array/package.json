@@ -2,7 +2,7 @@
   "name": "@ariesclark/array",
   "private": false,
   "sideEffects": false,
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Fast, efficient, and easy-to-use array extensions for TypeScript.",
   "files": [
     "dist"
