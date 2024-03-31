@@ -12,11 +12,13 @@
     "./*": "./dist/methods/*.js"
   },
   "scripts": {
-    "build": "rm -rf dist/* && tsc",
+    "build": "rm -rf dist/* && tsc && ts-readme",
     "test": "bun test"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {}
+  "devDependencies": {
+    "ts-readme": "^1.1.3"
+  }
 }

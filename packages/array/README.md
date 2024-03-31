@@ -15,42 +15,6 @@ npm install @ariesclark/extensions
 npm install @ariesclark/array
 ```
 
-## Usage
-
-```ts
-import { Array, group, unique } from '@ariesclark/array';
-
-const evenOdd = item => (item % 2 === 0 ? 'even' : 'odd');
-
-let value = [1, 2, 3, 4, 5];
-
-let result = Array.group(value, evenOdd);
-result = group(value, evenOdd); // Shorthand, equivalent to the above, tree-shakable.
-
-console.log(result);
-// {
-//   odd: [1, 3, 5],
-//   even: [2, 4]
-// }
-
-result = unique(
-  [
-    { id: 1, name: 'Lorem ipsum' },
-    { id: 2, name: 'Amet consectetur' },
-    { id: 3, name: 'Sed do eiusmod' },
-    { id: 2, name: 'Amet consectetur' }
-  ],
-  ({ id }) => id
-);
-
-console.log(result);
-// [
-//   { id: 1, name: "Lorem ipsum" },
-//   { id: 2, name: "Amet consectetur" },
-//   { id: 3, name: "Sed do eiusmod" }
-// ]
-```
-
 ### Documentation
 
 <!-- INSERT GENERATED DOCS START -->

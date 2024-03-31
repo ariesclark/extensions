@@ -11,7 +11,7 @@
     ".": "./dist/index.js"
   },
   "scripts": {
-    "build": "rm -rf dist/* && tsc",
+    "build": "rm -rf dist/* && cp -f ../../README.md ./README.md && tsc && ts-readme",
     "test": "bun test"
   },
   "keywords": [],
@@ -22,5 +22,8 @@
     "@ariesclark/number": "workspace:^",
     "@ariesclark/object": "workspace:^",
     "@ariesclark/string": "workspace:^"
+  },
+  "devDependencies": {
+    "ts-readme": "^1.1.3"
   }
 }
