@@ -10,7 +10,7 @@
     "build": "pnpm clean && pnpm -r build",
     "clean": "rm packages/*/dist -rf",
     "test": "pnpm -r test",
-    "release:bump": "changeset version",
+    "bump": "changeset version",
     "release": "pnpm publish -r"
   },
   "keywords": [],
