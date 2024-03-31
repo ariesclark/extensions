@@ -13,7 +13,6 @@
   },
   "scripts": {
     "build": "rm -rf dist/* && tsc",
-    "bump": "changeset version",
     "test": "bun test"
   },
   "keywords": [],
