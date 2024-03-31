@@ -1,5 +1,13 @@
 # @ariesclark/extensions
 
+## 0.2.1
+
+### Patch Changes
+
+- Updated dependencies [6216957]
+  - @ariesclark/array@0.2.1
+  - @ariesclark/string@0.2.1
+
 ## 0.2.0
 
 ### Minor Changes
