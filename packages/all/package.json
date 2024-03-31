@@ -11,7 +11,9 @@
     ".": "./dist/index.js"
   },
   "scripts": {
-    "build": "rm -rf dist/* && tsc"
+    "build": "rm -rf dist/* && tsc",
+    "bump": "changeset version",
+    "test": "bun test"
   },
   "keywords": [],
   "author": "",
