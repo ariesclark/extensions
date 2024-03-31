@@ -12,7 +12,7 @@
     "./*": "./dist/methods/*.js"
   },
   "scripts": {
-    "build": "rm -rf dist/* && tsc",
+    "build": "rm -rf dist/* && tsc && ts-readme",
     "bump": "changeset version",
     "test": "bun test"
   },
@@ -23,6 +23,7 @@
     "@ariesclark/number": "workspace:^"
   },
   "devDependencies": {
-    "@ariesclark/object": "workspace:^"
+    "@ariesclark/object": "workspace:^",
+    "ts-readme": "^1.1.3"
   }
 }

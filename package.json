@@ -20,6 +20,8 @@
     "@ariesclark/eslint-config": "^1.7.2",
     "@changesets/cli": "^2.27.1",
     "@types/bun": "^1.0.12",
+    "typedoc": "^0.25.12",
+    "typedoc-plugin-markdown": "^3.17.1",
     "typescript": "^5.4.3"
   }
 }
