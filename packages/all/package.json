@@ -2,7 +2,7 @@
   "name": "@ariesclark/extensions",
   "private": false,
   "sideEffects": false,
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Fast, efficient, and easy-to-use extensions for TypeScript.",
   "files": [
     "dist"
