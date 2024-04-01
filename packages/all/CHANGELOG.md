@@ -1,5 +1,16 @@
 # @ariesclark/extensions
 
+## 0.2.5
+
+### Patch Changes
+
+- 56dca76: Actually include files
+- Updated dependencies [56dca76]
+  - @ariesclark/array@0.2.4
+  - @ariesclark/number@0.2.3
+  - @ariesclark/object@0.2.3
+  - @ariesclark/string@0.2.4
+
 ## 0.2.4
 
 ### Patch Changes

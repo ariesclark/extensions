@@ -1,5 +1,11 @@
 # @ariesclark/number
 
+## 0.2.3
+
+### Patch Changes
+
+- 56dca76: Actually include files
+
 ## 0.2.2
 
 ### Patch Changes
