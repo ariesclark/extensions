@@ -1,5 +1,13 @@
 # @ariesclark/string
 
+## 0.2.4
+
+### Patch Changes
+
+- 56dca76: Actually include files
+- Updated dependencies [56dca76]
+  - @ariesclark/array@0.2.4
+
 ## 0.2.3
 
 ### Patch Changes
