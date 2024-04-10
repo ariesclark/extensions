@@ -1,5 +1,12 @@
 # @ariesclark/number
 
+## 0.3.0
+
+### Minor Changes
+
+- 308c654: Add global random function override & expand tests.
+- 11a1812: a lot of changes
+
 ## 0.2.3
 
 ### Patch Changes
