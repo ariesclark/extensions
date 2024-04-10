@@ -2,7 +2,7 @@
   "name": "@ariesclark/number",
   "private": false,
   "sideEffects": false,
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Fast, efficient, and easy-to-use number extensions for TypeScript.",
   "files": [
     "dist"
