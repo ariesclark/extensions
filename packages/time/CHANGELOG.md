@@ -1,5 +1,11 @@
 # @ariesclark/number
 
+## 0.3.1
+
+### Patch Changes
+
+- 31ce645: bump version
+
 ## 0.3.0
 
 ### Minor Changes
