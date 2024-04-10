@@ -1,9 +1,9 @@
 {
-  "name": "@ariesclark/object",
+  "name": "@ariesclark/time",
   "private": false,
   "sideEffects": false,
-  "version": "0.2.3",
-  "description": "Fast, efficient, and easy-to-use object extensions for TypeScript.",
+  "version": "0.2.2",
+  "description": "Fast, efficient, and easy-to-use time functions for TypeScript.",
   "files": [
     "dist"
   ],
@@ -17,7 +17,7 @@
     "test": "bun test"
   },
   "keywords": [
-    "object",
+    "number",
     "typescript",
     "utility"
   ],
@@ -27,7 +27,14 @@
   },
   "author": "ariesclark",
   "license": "MIT",
+  "dependencies": {
+    "@ariesclark/number": "workspace:^",
+    "ms": "^2.1.3"
+  },
   "devDependencies": {
+    "@ariesclark/array": "workspace:^",
+    "@ariesclark/object": "workspace:^",
+    "@types/ms": "^0.7.34",
     "ts-readme": "^1.1.3"
   }
 }

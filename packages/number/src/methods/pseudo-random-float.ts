@@ -1,7 +1,7 @@
 /* eslint-disable unicorn/prefer-code-point */
 /* eslint-disable unicorn/prefer-math-trunc */
 
-import type { RandomFunction } from "../types";
+import type { RandomFunction } from "./random-function";
 
 function cyrb128(value: string) {
 	let h1 = 1_779_033_703,
@@ -47,6 +47,14 @@ function sfc32(a: number, b: number, c: number, d: number) {
 
 /**
  * Create a pseudo-random number generator from a seed.
+ *
+ * @example
+ * ```typescript
+ * import { pseudoRandomFloat, randomFunction, randomInt } from "@ariesclark/number";
+ *
+ * randomFunction(pseudoRandomFloat("hello world"));
+ * randomInt(); // Predictable random number, based on the seed.
+ * ```
  */
 export function pseudoRandomFloat(seed: string): RandomFunction {
 	const [a, b, c, d] = cyrb128(seed);

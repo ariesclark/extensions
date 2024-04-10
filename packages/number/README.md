@@ -46,6 +46,13 @@ Fast, efficient, and easy-to-use number extensions for TypeScript.
       width="32%"
     />
   </a>
+  <a href="https://npm.im/@ariesclark/time">
+    <img
+      src="https://files.aries.fyi/2024/04/01/d668dcdee6a6b8ce.png"
+      alt="@ariesclark/time"
+      width="32%"
+    />
+  </a>
 </div>
 
 ## Installation
@@ -60,49 +67,63 @@ npm install @ariesclark/number
 
 <!-- INSERT GENERATED DOCS START -->
 
-### `MaybeSuffix` (type)
+### `clamp` (function)
 
-### `Milliseconds` (type)
+Clamps a number within the range specified by the minimum and maximum values.
 
-A duration in milliseconds.
+**Parameters:**
+
+- /\*\*
+
+* The value to clamp.
+  \*/
+  value (`number`)
+
+- /\*\*
+
+* The minimum value, inclusive.
+  \*/
+  minimum (`number`)
+
+- /\*\*
+
+* The maximum value, inclusive.
+  \*/
+  maximum (`number`)
+
+**returns:** number
+
+### `randomFloat` (function)
+
+[object Object],[object Object],[object Object],[object Object],[object Object]
 
 ### `RandomFunction` (type)
 
 A random number generator function that returns a float between 0 and 1.
 
-### `Duration` (type)
+### `defaultRandom` (variable: RandomFunction)
 
-A duration value.
+The default random number generator function.
 
-Supports the following formats in both short and long form:
+### `randomFunction` (function)
 
-- `ms` (milliseconds) e.g. `20ms`
-- `s` (seconds) e.g. `1s` or `1 second`
-- `m` (minutes) e.g. `2m` or `2 minutes`
-- `h` (hours) e.g. `3h` or `3 hours`
-- `d` (days) e.g. `4d` or `4 days`
-- `w` (weeks) e.g. `5w` or `5 weeks`
-- `y` (years) e.g. `6y` or `6 years`
-
-### `milliseconds` (function)
-
-[object Object],[object Object],[object Object]
+Get the current random number generator function, or set a new one.
 
 **Parameters:**
 
-- value (`Duration`)
+- newValue (`RandomFunction`) - The new random number generator function, or `undefined` to get the current value, or `null` to reset to the default.
 
-**returns:** number
+**returns:** RandomFunction
 
-```tsx
-ms('5m'); // 300000, 5 minutes in milliseconds, short form.
-ms(300000); // 300000, 5 minutes in milliseconds, pass-through.
-ms('2 hours'); // 7200000, 2 hours in milliseconds, long form.
+```typescript
+import { randomFunction } from '@ariesclark/number/random-function';
+import { randomInt } from '@ariesclark/number/random-int';
+
+randomInt(); // Random number between 0 and 100.
+randomFunction(() => 0.5);
+
+randomInt(); // Always 50.
 ```
-
-### `ms` (variable)
-
-[object Object],[object Object],[object Object]
 
 ### `pseudoRandomFloat` (function)
 
@@ -114,9 +135,16 @@ Create a pseudo-random number generator from a seed.
 
 **returns:** RandomFunction
 
-### `randomFloat` (function)
+```typescript
+import {
+  pseudoRandomFloat,
+  randomFunction,
+  randomInt
+} from '@ariesclark/number';
 
-[object Object],[object Object],[object Object]
+randomFunction(pseudoRandomFloat('hello world'));
+randomInt(); // Predictable random number, based on the seed.
+```
 
 ### `randomInt` (function)
 
@@ -124,25 +152,23 @@ Get a random value between `minimum` and `maximum`.
 
 **Parameters:**
 
-- minimum (`number`) - The minimum value, inclusive, defaults to `0`.
-- maximum (`number`) - The maximum value, inclusive, defaults to `100`.
-- random (`RandomFunction`)
+- /\*\*
 
-**returns:** number
+* The minimum value, inclusive, defaults to `0`
+  \*/
+  minimum (`number`)
 
-### `Timestamp` (type)
+- /\*\*
 
-[object Object],[object Object],[object Object],[object Object],[object Object]
+* The maximum value, inclusive, defaults to `100`
+  \*/
+  maximum (`number`)
 
-### `InvalidTimestampError` (variable)
+- /\*\*
 
-### `timestamp` (function)
-
-[object Object],[object Object],[object Object]
-
-**Parameters:**
-
-- timestamp (`Timestamp`)
+* The random number generator function.
+  \*/
+  random (`RandomFunction`)
 
 **returns:** number
 

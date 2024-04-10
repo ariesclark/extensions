@@ -3,6 +3,18 @@ import { identity } from "@ariesclark/object";
 
 import { unique } from "./unique";
 
+test("unique: empty", () => {
+	expect(unique([], identity)).toHaveLength(0);
+});
+
+test("unique: non-mutative", () => {
+	const a = ["hello", "world"];
+	const b = unique(a, identity);
+
+	expect(b).toEqual(["hello", "world"]);
+	expect(b).not.toBe(a);
+});
+
 test("unique", () => {
 	expect(unique([], identity)).toHaveLength(0);
 	expect(unique(["hello", "world", "world"], identity)).toEqual([
@@ -12,16 +24,16 @@ test("unique", () => {
 
 	expect(
 		unique(
-			// An array of 100 objects with a value property from 0 to 49, repeated twice.
+			// An array of 100 objects with a `hello` property from 0 to 49, repeated twice.
 			Array.from({ length: 100 }, (_, index) => ({
-				value: Math.floor(index / 2)
+				hello: Math.floor(index / 2)
 			})),
-			({ value }) => value
+			({ hello }) => hello
 		)
 	).toEqual(
-		// An array of 50 objects with a value property from 0 to 49.
+		// An array of 50 objects with a `hello` property from 0 to 49.
 		Array.from({ length: 50 }, (_, index) => ({
-			value: index
+			hello: index
 		}))
 	);
 });

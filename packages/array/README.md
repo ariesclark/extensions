@@ -46,6 +46,13 @@ Fast, efficient, and easy-to-use array extensions for TypeScript.
       width="32%"
     />
   </a>
+  <a href="https://npm.im/@ariesclark/time">
+    <img
+      src="https://files.aries.fyi/2024/04/01/d668dcdee6a6b8ce.png"
+      alt="@ariesclark/time"
+      width="32%"
+    />
+  </a>
 </div>
 
 ## Installation
@@ -74,7 +81,7 @@ group([1, 2, 3, 4, 5], item => (item % 2 === 0 ? 'even' : 'odd'));
 
 ### `randomIndex` (function)
 
-Get a random index from an array, with an optional random number generator.
+Get a random index from an array.
 
 **Parameters:**
 
@@ -83,7 +90,7 @@ Get a random index from an array, with an optional random number generator.
 
 **returns:** null
 
-```tsx
+```typescript
 const value = ['lorem', 'ipsum', 'dolor', 'sit', 'amet'];
 
 randomIndex(value); // 3, eventually.

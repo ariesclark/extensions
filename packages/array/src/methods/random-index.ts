@@ -1,16 +1,19 @@
-import { randomFloat } from "@ariesclark/number/random-float";
-
-import type { RandomFunction } from "@ariesclark/number";
+import {
+	type RandomFunction,
+	randomFunction
+} from "@ariesclark/number/random-function";
 
 /**
- * Get a random index from an array, with an optional random number generator.
+ * Get a random index from an array.
  *
  * @example
+ * ```typescript
  * const value = ["lorem", "ipsum", "dolor", "sit", "amet"];
  *
  * randomIndex(value); // 3, eventually.
  * randomIndex(value); // 0, eventually.
  * randomIndex(value); // 2, eventually.
+ * ```
  */
 export function randomIndex(
 	array: { length: 0 },
@@ -22,7 +25,7 @@ export function randomIndex(
 ): number;
 export function randomIndex(
 	array: { length: number },
-	random: RandomFunction = randomFloat
+	random: RandomFunction = randomFunction()
 ): number | null {
 	if (array.length === 0) return null;
 	return Math.floor(random() * array.length);

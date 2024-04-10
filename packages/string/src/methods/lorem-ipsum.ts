@@ -1,4 +1,4 @@
-import { randomItem } from "@ariesclark/array";
+import { randomItem } from "@ariesclark/array/random-item";
 
 import { capitalize } from "./capitalize";
 

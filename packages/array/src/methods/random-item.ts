@@ -1,8 +1,6 @@
-import { randomFloat } from "@ariesclark/number/random-float";
-
 import { randomIndex } from "./random-index";
 
-import type { RandomFunction } from "@ariesclark/number";
+import type { RandomFunction } from "@ariesclark/number/random-function";
 
 /**
  * Get a random item from an array, with an optional random number generator.
@@ -22,7 +20,7 @@ export function randomItem<T>(
 
 export function randomItem<T>(
 	array: { length: number; [index: number]: T },
-	random: RandomFunction = randomFloat
+	random?: RandomFunction
 ): T | null {
 	if (array.length === 0) return null;
 	// eslint-disable-next-line @typescript-eslint/no-non-null-assertion

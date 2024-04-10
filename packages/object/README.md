@@ -46,6 +46,13 @@ Fast, efficient, and easy-to-use object extensions for TypeScript.
       width="32%"
     />
   </a>
+  <a href="https://npm.im/@ariesclark/time">
+    <img
+      src="https://files.aries.fyi/2024/04/01/d668dcdee6a6b8ce.png"
+      alt="@ariesclark/time"
+      width="32%"
+    />
+  </a>
 </div>
 
 ## Installation
@@ -60,6 +67,14 @@ npm install @ariesclark/object
 
 <!-- INSERT GENERATED DOCS START -->
 
+### `empty` (function)
+
+**Parameters:**
+
+- value (`unknown`)
+
+**returns:** boolean
+
 ### `identity` (function)
 
 A function that returns the value passed to it, unchanged.
@@ -69,6 +84,14 @@ A function that returns the value passed to it, unchanged.
 - value (`T`)
 
 **returns:** T
+
+### `keys` (function)
+
+**Parameters:**
+
+- object (`T`)
+
+**returns:** (keyof T)[]
 
 ### `omit` (function)
 
@@ -81,14 +104,9 @@ A function that returns the value passed to it, unchanged.
 
 ### `pick` (function)
 
-### `{ assign, create, defineProperties, defineProperty, entries, freeze, fromEntries, getOwnPropertyDescriptor, getOwnPropertyDescriptors, getOwnPropertyNames, getOwnPropertySymbols, getPrototypeOf, hasOwn, is, isExtensible, isFrozen, isSealed, keys, preventExtensions, seal, setPrototypeOf, values }` (variable)
+### `{ assign, create, defineProperties, defineProperty, entries, freeze, fromEntries, getOwnPropertyDescriptor, getOwnPropertyDescriptors, getOwnPropertyNames, getOwnPropertySymbols, getPrototypeOf, hasOwn, is, isExtensible, isFrozen, isSealed,
 
-### `empty` (function)
-
-**Parameters:**
-
-- value (`unknown`)
-
-**returns:** boolean
+// keys,
+preventExtensions, seal, setPrototypeOf, values }` (variable)
 
 <!-- INSERT GENERATED DOCS END -->

@@ -13,7 +13,7 @@
     "./*": "./dist/methods/*.js"
   },
   "scripts": {
-    "build": "rm -rf dist/* && tsc && ts-readme",
+    "build": "rm -rf dist/* && tsc",
     "test": "bun test"
   },
   "keywords": [

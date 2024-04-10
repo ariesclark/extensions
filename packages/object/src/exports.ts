@@ -16,13 +16,15 @@ export const {
 	isExtensible,
 	isFrozen,
 	isSealed,
-	keys,
+	// keys,
 	preventExtensions,
 	seal,
 	setPrototypeOf,
 	values
 } = Object;
 
+export * from "./methods/empty";
 export * from "./methods/identity";
+export * from "./methods/keys";
 export * from "./methods/omit";
 export * from "./methods/pick";

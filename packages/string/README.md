@@ -46,6 +46,13 @@ Fast, efficient, and easy-to-use string extensions for TypeScript.
       width="32%"
     />
   </a>
+  <a href="https://npm.im/@ariesclark/time">
+    <img
+      src="https://files.aries.fyi/2024/04/01/d668dcdee6a6b8ce.png"
+      alt="@ariesclark/time"
+      width="32%"
+    />
+  </a>
 </div>
 
 ## Installation

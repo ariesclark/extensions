@@ -4,7 +4,7 @@ import { randomFloat } from "./random-float";
 
 const iterations = 10_000;
 
-test("randomFloat", () => {
+test("randomFloat: distribution", () => {
 	const values: Array<number> = [];
 
 	for (let index = 0; index < iterations; index++) {

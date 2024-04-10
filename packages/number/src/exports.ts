@@ -1,5 +1,3 @@
-export * from "./types";
-
 export const {
 	EPSILON,
 	MAX_SAFE_INTEGER,
@@ -18,8 +16,8 @@ export const {
 	parseInt
 } = Number;
 
-export * from "./methods/milliseconds";
+export * from "./methods/clamp";
 export * from "./methods/pseudo-random-float";
 export * from "./methods/random-float";
+export * from "./methods/random-function";
 export * from "./methods/random-int";
-export * from "./methods/timestamp";

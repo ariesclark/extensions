@@ -1,24 +1,17 @@
 import { expect, test } from "bun:test";
+import { pseudoRandomFloat } from "@ariesclark/number";
 
 import { randomItem } from "./random-item";
 
-const iterations = 10_000;
+test("randomItem: empty", () => {
+	expect(randomItem([])).toBeNull();
+});
 
 test("randomItem", () => {
-	const values: Array<number> = [];
-	const items = Array.from({ length: iterations / 1000 }, (_, index) => index);
+	const randomFloat = pseudoRandomFloat("hello world");
+	const array = ["lorem", "ipsum", "dolor", "sit", "amet"];
 
-	expect(randomItem([])).toBeNull();
-
-	for (let index = 0; index < iterations; index++) {
-		const value = randomItem(items);
-		values.push(value);
-
-		expect(value).toBeDefined();
-		expect(value).toBeTypeOf("number");
-	}
-
-	for (const item of items) {
-		expect(values).toContain(item);
-	}
+	expect(randomItem(array, randomFloat)).toBe("ipsum");
+	expect(randomItem(array, randomFloat)).toBe("amet");
+	expect(randomItem(array, randomFloat)).toBe("sit");
 });

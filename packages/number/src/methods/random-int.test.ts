@@ -1,12 +1,9 @@
 import { expect, test } from "bun:test";
 
-import { pseudoRandomFloat } from "..";
-
+import { pseudoRandomFloat } from "./pseudo-random-float";
 import { randomInt } from "./random-int";
 
 test("randomInt", () => {
-	const randomFloat = pseudoRandomFloat("hello world");
-
 	for (let index = 0; index < 1000; index++) {
 		const a = randomInt();
 
@@ -24,11 +21,13 @@ test("randomInt", () => {
 		expect(c).toBeTypeOf("number");
 		expect(c).toBeGreaterThanOrEqual(1);
 		expect(c).toBeLessThanOrEqual(10);
-
-		const d = randomInt(1, 10, randomFloat);
-
-		expect(d).toBeTypeOf("number");
-		expect(d).toBeGreaterThanOrEqual(1);
-		expect(d).toBeLessThanOrEqual(10);
 	}
+});
+
+test("randomInt: random override", () => {
+	const randomFloat = pseudoRandomFloat("hello world");
+
+	expect(randomInt(1, 10, randomFloat)).toBe(3);
+	expect(randomInt(1, 10, randomFloat)).toBe(9);
+	expect(randomInt(1, 10, randomFloat)).toBe(8);
 });
