@@ -1,5 +1,13 @@
 # @ariesclark/string
 
+## 0.3.1
+
+### Patch Changes
+
+- f7ea146: more changes
+- Updated dependencies [f7ea146]
+  - @ariesclark/array@0.3.1
+
 ## 0.3.0
 
 ### Minor Changes
