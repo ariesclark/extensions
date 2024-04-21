@@ -2,7 +2,7 @@
   "name": "@ariesclark/extensions",
   "private": false,
   "sideEffects": false,
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Fast, efficient, and easy-to-use extensions for TypeScript.",
   "files": [
     "dist"
@@ -36,7 +36,7 @@
     "@ariesclark/number": "workspace:^",
     "@ariesclark/object": "workspace:^",
     "@ariesclark/string": "workspace:^",
-    "@ariesclark/time": "^0.3.1"
+    "@ariesclark/time": "^0.3.2"
   },
   "devDependencies": {
     "ts-readme": "^1.1.3"
