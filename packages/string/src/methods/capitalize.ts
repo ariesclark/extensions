@@ -12,6 +12,8 @@ export function capitalize<T extends string>(value: T): Capitalize<T> {
 	return (uppercase(value.charAt(0)) + value.slice(1)) as Capitalize<T>;
 }
 
+capitalize("hello"); // "Hello"
+
 type Uncapitalize<T> = T extends `${infer F}${infer R}`
 	? `${Lowercase<F>}${R}`
 	: T;

@@ -60,14 +60,19 @@ export function duration(
 ): DurationLiteral {
 	options = Object.assign({ short: false }, options);
 	const milliseconds = ms(value);
+	const absolute = Math.abs(milliseconds);
 
 	for (const [unit, short, singular, plural] of durationUnitValues) {
-		if (milliseconds < unit) continue;
+		if (absolute < unit) continue;
 
-		const value = Math.floor(milliseconds / unit);
+		const value = Math[milliseconds === absolute ? "floor" : "ceil"](
+			milliseconds / unit
+		);
 
 		return `${value}${
-			options.short ? short : (` ${value === 1 ? singular : plural}` as const)
+			options.short
+				? short
+				: (` ${Math.abs(value) === 1 ? singular : plural}` as const)
 		}`;
 	}
 

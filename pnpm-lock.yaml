@@ -29,6 +29,9 @@ importers:
       '@ariesclark/array':
         specifier: workspace:^
         version: link:../array
+      '@ariesclark/function':
+        specifier: workspace:^
+        version: link:../function
       '@ariesclark/number':
         specifier: workspace:^
         version: link:../number
@@ -38,6 +41,9 @@ importers:
       '@ariesclark/string':
         specifier: workspace:^
         version: link:../string
+      '@ariesclark/time':
+        specifier: ^0.3.1
+        version: 0.3.1
     devDependencies:
       ts-readme:
         specifier: ^1.1.3
@@ -52,6 +58,15 @@ importers:
       '@ariesclark/object':
         specifier: workspace:^
         version: link:../object
+      ts-readme:
+        specifier: ^1.1.3
+        version: 1.1.3(typescript@5.4.3)
+
+  packages/function:
+    devDependencies:
+      '@ariesclark/string':
+        specifier: workspace:^
+        version: link:../string
       ts-readme:
         specifier: ^1.1.3
         version: 1.1.3(typescript@5.4.3)
@@ -147,6 +162,19 @@ packages:
       - tailwindcss
       - typescript
     dev: true
+
+  /@ariesclark/number@0.3.0:
+    resolution: {integrity: sha512-GZPzs7L3VPoZBWkTC1LFVjNgugBz72w1Xf8r+z0L2BkisJALhf/FftlSZE+ZUV4zeP+zANyWooqtBFOY+DAEUA==}
+    dependencies:
+      ms: 2.1.3
+    dev: false
+
+  /@ariesclark/time@0.3.1:
+    resolution: {integrity: sha512-0l1Jrp4OlauAwuZNOQRUcj2+vbVOGRxeb2FiCcRWDfDsp3brUdimja5Ag2f8bVN3ifiVCyybh0Bjya16OG5diA==}
+    dependencies:
+      '@ariesclark/number': 0.3.0
+      ms: 2.1.3
+    dev: false
 
   /@babel/code-frame@7.24.2:
     resolution: {integrity: sha512-y5+tLQyV8pg3fsiln67BVLD1P13Eg4lh5RW9mF0zUuvLrv9uIQ4MCL+CRT+FTsBlBjcIan6PGsLcBN0m3ClUyQ==}

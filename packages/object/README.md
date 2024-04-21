@@ -13,7 +13,7 @@ Fast, efficient, and easy-to-use object extensions for TypeScript.
 <div>
   <a href="https://npm.im/@ariesclark/extensions">
     <img
-      src="https://files.aries.fyi/2024/03/31/bef04054b69ddc08.png"
+      src="https://files.aries.fyi/2024/04/20/a0b2e8dffa0c5b78.png"
       alt="@ariesclark/extensions"
       width="32%"
     />
@@ -50,6 +50,13 @@ Fast, efficient, and easy-to-use object extensions for TypeScript.
     <img
       src="https://files.aries.fyi/2024/04/01/d668dcdee6a6b8ce.png"
       alt="@ariesclark/time"
+      width="32%"
+    />
+  </a>
+  <a href="https://npm.im/@ariesclark/function">
+    <img
+      src="https://files.aries.fyi/2024/04/20/d6b1bb165fc4a46f.png"
+      alt="@ariesclark/function"
       width="32%"
     />
   </a>

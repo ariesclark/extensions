@@ -3,9 +3,9 @@ export const {
 	create,
 	defineProperties,
 	defineProperty,
-	entries,
+	// entries,
 	freeze,
-	fromEntries,
+	// fromEntries,
 	getOwnPropertyDescriptor,
 	getOwnPropertyDescriptors,
 	getOwnPropertyNames,
@@ -24,6 +24,8 @@ export const {
 } = Object;
 
 export * from "./methods/empty";
+export * from "./methods/entries";
+export * from "./methods/from-entries";
 export * from "./methods/identity";
 export * from "./methods/keys";
 export * from "./methods/omit";

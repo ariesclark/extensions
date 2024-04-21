@@ -18,6 +18,6 @@ export function timestamp(timestamp: Timestamp): Milliseconds {
 				? timestamp.getTime()
 				: Date.parse(timestamp);
 
-	if (!Number.isNaN(value)) return value;
-	throw InvalidTimestampError;
+	if (Number.isNaN(value)) throw InvalidTimestampError;
+	return value;
 }
