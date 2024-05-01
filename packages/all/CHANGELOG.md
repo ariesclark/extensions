@@ -1,5 +1,12 @@
 # @ariesclark/extensions
 
+## 0.3.2
+
+### Patch Changes
+
+- Updated dependencies [71d9055]
+  - @ariesclark/time@0.4.0
+
 ## 0.3.1
 
 ### Patch Changes

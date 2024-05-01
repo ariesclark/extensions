@@ -1,5 +1,11 @@
 # @ariesclark/number
 
+## 0.4.0
+
+### Minor Changes
+
+- 71d9055: fix dependencies being listed as dev dependencies
+
 ## 0.3.2
 
 ### Patch Changes
