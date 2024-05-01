@@ -29,11 +29,11 @@
   "license": "MIT",
   "dependencies": {
     "@ariesclark/number": "workspace:^",
+    "@ariesclark/array": "workspace:^",
+    "@ariesclark/object": "workspace:^",
     "ms": "^2.1.3"
   },
   "devDependencies": {
-    "@ariesclark/array": "workspace:^",
-    "@ariesclark/object": "workspace:^",
     "@types/ms": "^0.7.34",
     "ts-readme": "^1.1.3"
   }
